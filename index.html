@@ -1,8 +1,12 @@
 <!DOCTYPE html> 
-<html>
-<head>
+<html><head>
 <meta charset="utf-8">
 <title> Información Especialidad Técnico en Programación</title>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
 
 <!--grupo CSS-->
 <link rel="stylesheet" href="css/app1thema.min.css"/>
@@ -14,9 +18,32 @@
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <!-- <script src="js/acciones.js"</script> -->
 <script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/im6.jpg')">
 <div data-role="page" id="Principal" data-theme="a">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
 <h1>Información Especialidad Técnico en Programación</h1>
@@ -27,8 +54,10 @@
 <div>
 <p> Información sobre el Perfil de Egreso de la Especialidad </p>
 <br>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/im6.jpg',1)"><img src="imagenes/im7.jpg" width="368" height="384" id="Image13"></a>
 <div>
-<p>La información que ofrece la carrera de Técnico en Programación permite al egresado a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:
+  <p>La información que ofrece la carrera de Técnico en Programación permite al egresado a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:
 <br>
 <ul>
 <li>Instalación y desarollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos,</li>
@@ -89,6 +118,30 @@ Las siguentes competencias profesionales:<br>
     </li>
     </ul>
     </div>
+    
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/im1.jpg" alt="im1" title="im1" id="wows1_0"/></li>
+		<li><img src="data1/images/im2.jpg" alt="im2" title="im2" id="wows1_1"/></li>
+		<li><img src="data1/images/im3.jpg" alt="im3" title="im3" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/im4.jpg" alt="jquery slider" title="im4" id="wows1_3"/></a></li>
+		<li><img src="data1/images/im5.jpg" alt="im5" title="im5" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="im1"><span><img src="data1/tooltips/im1.jpg" alt="im1"/>1</span></a>
+		<a href="#" title="im2"><span><img src="data1/tooltips/im2.jpg" alt="im2"/>2</span></a>
+		<a href="#" title="im3"><span><img src="data1/tooltips/im3.jpg" alt="im3"/>3</span></a>
+		<a href="#" title="im4"><span><img src="data1/tooltips/im4.jpg" alt="im4"/>4</span></a>
+		<a href="#" title="im5"><span><img src="data1/tooltips/im5.jpg" alt="im5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   
+    
     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
     <div>
     <img src="res/android/mdpi.png" width="128" height="128" alt="mdpi">
@@ -180,7 +233,10 @@ Las siguentes competencias profesionales:<br>
     <div data-role="content" align="center">
     <div>
     <img src="imagenes/mod5.png" width="100%" height="100%" alt="mod5"></div>
+    <a href="https://sems.gob.mx">Página de la Subsecretaría de la Educación Media Superior</a>
     </div>
+   
+
     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
     <div>
     <img src="imagenes/persona_azul.png" width="46" height="46" alt="pie">
